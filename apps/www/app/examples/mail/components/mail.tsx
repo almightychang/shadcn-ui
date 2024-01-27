@@ -184,7 +184,7 @@ export function Mail({
             <TabsContent value="all" className="m-0">
               <MailList items={mails} />
             </TabsContent>
-            <TabsContent value="unread" className="m-0">
+            <TabsContent value="unread" className="m-0 flex flex-col">
               <MailList items={mails.filter((item) => !item.read)} />
             </TabsContent>
           </Tabs>
